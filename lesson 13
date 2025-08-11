@@ -1,0 +1,15 @@
+# Уроки Python с нуля / #16 – Модули в языке Питон. Создание и работа с модулями
+# Модули это то что используется через команду import
+
+# import datetime as dt, sys, os, platform
+# from math import sqrt as s
+
+
+# print(dt.datetime.now().time().hour)
+
+# from mymodule import add3numb
+
+# print(add3numb(5,4,0))
+
+import cowsay
+cowsay.cow("Hello, world!")
