@@ -1,0 +1,22 @@
+#Уроки Python с нуля / #14 – Обработчик исключений. Конструкция «try - except»
+
+try:
+    x = int(input("Введите число: "))
+    y = int(input("Введите число: "))
+    z = input("Введите операцию: ")
+    if z == "+":
+            print(x + y)
+    elif z == "-":
+            print(x - y)
+    elif z == "*":
+            print(x * y)
+    elif z == "/":
+            print (x / y)
+except ValueError:
+        print("Вы ввели не число. Пожалуйста, попробуйте еще раз")
+except ZeroDivisionError:
+        print("Деление на ноль не допустимо. Пожалуйста, попробуйте ещё раз")
+else: #срабатывает тогда когда try не сработал
+        print("Вы правильно ввели информацию, поздавляю")
+finally: #всегда срабатывает
+        print("finally")
