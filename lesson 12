@@ -1,0 +1,7 @@
+#Уроки Python с нуля / #15 – Менеджер «With ... as» для работы с файлами
+
+try:
+    with open("C:/PYTHON PROJECTS/text.txt", 'r', encoding='utf-8') as penis:
+        print(penis.read()) #Менеджер with .. as очень полезен ведь он сам открывает файл так и сам закрывает и не надо обращаться к функции close()
+except FileNotFoundError:
+    print('Файл не найден')
