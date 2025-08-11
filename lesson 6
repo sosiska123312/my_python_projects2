@@ -1,0 +1,29 @@
+#Индексы и строки
+# word = 'daniiar'
+huy = 'football,basketball,skate'
+# print(word[1])
+# print(word[3])
+# print(word[6])
+# print(len(word))
+# print(word.count('i'))
+# print(word.find('i'))
+hobby = (huy.split(",")) # split часто юзается, нужен для разделения, разбивания по симбволам
+
+for daun in range(len(hobby)):
+    hobby[daun] = hobby[daun].capitalize()
+
+print(hobby)
+
+result = ', '.join(hobby)
+print(result)
+
+
+
+# word = 'football'
+
+# print(word[4:8:2])
+
+# ls = [3 ,5 ,7 , 8, 'Penis', "EZZZ"]
+# print(ls[1:6:2])
+# print(ls[::-1])
+# print(ls[:5:])
