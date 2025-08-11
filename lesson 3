@@ -1,0 +1,47 @@
+#if elif else - условная конструкция
+# двойное равно (==) - сравнение, не связанное с обычным равно, это два разных знака, один для сравнения, другой для присваивания
+# не равно (!=) - отрицание сравнения, то есть например:
+# if local != 5 : (если число не равно 5 то:)
+
+#data = int(input("enter a number: "))
+#if data != 6:
+    #print('Мы на месте')    
+    #if data > 5:
+        #print('number is bigger than 5')
+
+
+#Happy = False
+
+#if Happy:  #тоже самое что if Happy == True:
+    #print ('User is happy')
+
+#if not Happy:  #тоже самое что if Happy == False:
+#    print ('User is sad')
+
+# elif это дополнительное условие, если оно срабатывает то else не сработает (так же как и с if)
+# порядок : if - elif - else
+#else:
+    #print('User is sad')
+
+
+#if Happy and data == 6:
+    #print('User is happy and number is 6')
+#elif Happy and data != 6:
+    #print('User is happy but number is not 6')
+#elif not Happy and data == 6:
+    #print('User is sad but number is 6')
+#else:
+    #print('User is sad and number not 6')
+
+
+#or - логическое "или", то есть если хоть одно условие сработает, то все условия сработают
+#and - логическое "и", то есть если хоть одно условие не сработает то все условия не сработают
+#not - логическое "не"
+#and и or можно писать бесконечно в условиях, то есть if Happy and Data and Pen and ... and ... and и так вечно
+
+
+data = input("enter a number: ")
+
+number = 5 if data == 'Five' else 0
+
+print(number)
