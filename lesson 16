@@ -1,0 +1,20 @@
+# Уроки Python с нуля / #20 – Декораторы функций
+
+
+import webbrowser
+
+
+def validator(func):
+    def wrapper(url):
+        if "." in url:
+            func(url)
+        else:
+            print("Неверный URL")    
+    return wrapper
+
+@validator
+
+def open_url(url):
+    webbrowser.open(url)
+
+open_url("https://www.youtube.com/watch?v=tuFuDKE7DF8&list=PLDyJYA6aTY1lPWXBPk0gw6gR8fEtPDGKa&index=21")
