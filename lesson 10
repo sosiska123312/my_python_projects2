@@ -1,0 +1,23 @@
+# data = input("enter text: ")
+
+
+# file = open('C:/PYTHON PROJECTS/text.txt', 'a') 
+# "a" - Добавление, "w" - перезапись, "r" - чтение
+# file.write(data + '\n')
+
+
+
+
+# file.close()
+
+
+file = open("C:/PYTHON PROJECTS/text.txt", "r")
+
+# print(file.read())
+
+for line in file:
+    print(line)
+
+
+
+file.close()
