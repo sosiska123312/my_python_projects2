@@ -1,0 +1,20 @@
+# data = set('hello') # первый способ создания множества с помощью функции set()
+data = {5, 7 ,8 ,9 ,5 ,8} # второй способ создания множеств - за счёт словарей без ключей
+# повторяющиеся данные не будут добавлены
+data.add(32) # add new element
+data.update(['32', True, 4, 6]) #add few elements
+data.remove(True) #delete element
+data.pop() #delete first element
+# data.clear() #delete all elements
+
+
+nums = [4,2,5,8,3,8,9,10]
+nums2 = set(nums) #так можно удалить повторяющиеся элементы
+
+data2 = frozenset(['32', True, 4, 6, 5, 7 ,8 ,9 ,5 ,8])
+
+data2.add(24)
+print(data2)
+
+
+# frozenset это объединение кортежа и множества, то есть обычное множество но изменять его нельзя
